@@ -6,7 +6,7 @@ import Link from 'next/link'
 const RootPage: NextPage = () => {
   return (
     <div>
-      top page {publicEnv.appEnv}
+      hi! {publicEnv.appEnv}
       <br />
       <Link href="/terms">
         <a href="/terms">terms</a>
