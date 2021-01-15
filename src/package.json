@@ -4,9 +4,7 @@
   "scripts": {
     "clean": "rm -rf .next && rm -rf dist",
     "dev": "next",
-    "deploy:dev": "npm run build:dev && firebase deploy -P dev --only hosting",
-    "deploy:prod": "firebase use prod && cross-env APP_ENV=prod npm run deploy && firebase use dev",
-    "build:dev": "npm run clean && APP_ENV=dev next build && next export -o dist",
+    "build": "npm run clean && next build && next export -o dist",
     "lint": "eslint --ext .ts,.tsx .",
     "lint:fix": "eslint --ext .ts,.tsx . --fix"
   },
