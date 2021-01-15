@@ -1,6 +1,0 @@
-{
-  "projects": {
-    "dev": "your dev project id",
-    "prod": "your prod project id"
-  }
-}
