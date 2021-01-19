@@ -8,6 +8,7 @@ import { StyleConst } from 'styles/const'
 import NProgress from 'nextjs-progressbar'
 import { Header, Footer } from 'components/lv2'
 import { DefaultSeo } from 'components/seo'
+import { initAmplify } from 'lib/amplify'
 
 const AppContainer = styled.div`
   position: relative;
@@ -41,5 +42,7 @@ const App = ({ Component, pageProps }: AppProps) => {
     </Provider>
   )
 }
+
+initAmplify()
 
 export default App
