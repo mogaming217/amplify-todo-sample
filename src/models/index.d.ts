@@ -7,8 +7,6 @@ import { ModelInit, MutableModel, PersistentModelConstructor } from "@aws-amplif
 export declare class User {
   readonly id: string;
   readonly name?: string;
-  readonly createdAt?: number;
-  readonly updatedAt?: number;
   constructor(init: ModelInit<User>);
   static copyOf(source: User, mutator: (draft: MutableModel<User>) => MutableModel<User> | void): User;
 }

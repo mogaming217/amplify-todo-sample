@@ -5,15 +5,11 @@
 export type CreateUserInput = {
   id?: string | null,
   name?: string | null,
-  createdAt?: number | null,
-  updatedAt?: number | null,
   _version?: number | null,
 };
 
 export type ModelUserConditionInput = {
   name?: ModelStringInput | null,
-  createdAt?: ModelIntInput | null,
-  updatedAt?: ModelIntInput | null,
   and?: Array< ModelUserConditionInput | null > | null,
   or?: Array< ModelUserConditionInput | null > | null,
   not?: ModelUserConditionInput | null,
@@ -59,23 +55,9 @@ export type ModelSizeInput = {
   between?: Array< number | null > | null,
 };
 
-export type ModelIntInput = {
-  ne?: number | null,
-  eq?: number | null,
-  le?: number | null,
-  lt?: number | null,
-  ge?: number | null,
-  gt?: number | null,
-  between?: Array< number | null > | null,
-  attributeExists?: boolean | null,
-  attributeType?: ModelAttributeTypes | null,
-};
-
 export type UpdateUserInput = {
   id: string,
   name?: string | null,
-  createdAt?: number | null,
-  updatedAt?: number | null,
   _version?: number | null,
 };
 
@@ -87,8 +69,6 @@ export type DeleteUserInput = {
 export type ModelUserFilterInput = {
   id?: ModelIDInput | null,
   name?: ModelStringInput | null,
-  createdAt?: ModelIntInput | null,
-  updatedAt?: ModelIntInput | null,
   and?: Array< ModelUserFilterInput | null > | null,
   or?: Array< ModelUserFilterInput | null > | null,
   not?: ModelUserFilterInput | null,
@@ -120,11 +100,11 @@ export type CreateUserMutation = {
     __typename: "User",
     id: string,
     name: string | null,
-    createdAt: number | null,
-    updatedAt: number | null,
     _version: number,
     _deleted: boolean | null,
     _lastChangedAt: number,
+    createdAt: string,
+    updatedAt: string,
   } | null,
 };
 
@@ -138,11 +118,11 @@ export type UpdateUserMutation = {
     __typename: "User",
     id: string,
     name: string | null,
-    createdAt: number | null,
-    updatedAt: number | null,
     _version: number,
     _deleted: boolean | null,
     _lastChangedAt: number,
+    createdAt: string,
+    updatedAt: string,
   } | null,
 };
 
@@ -156,11 +136,11 @@ export type DeleteUserMutation = {
     __typename: "User",
     id: string,
     name: string | null,
-    createdAt: number | null,
-    updatedAt: number | null,
     _version: number,
     _deleted: boolean | null,
     _lastChangedAt: number,
+    createdAt: string,
+    updatedAt: string,
   } | null,
 };
 
@@ -173,11 +153,11 @@ export type GetUserQuery = {
     __typename: "User",
     id: string,
     name: string | null,
-    createdAt: number | null,
-    updatedAt: number | null,
     _version: number,
     _deleted: boolean | null,
     _lastChangedAt: number,
+    createdAt: string,
+    updatedAt: string,
   } | null,
 };
 
@@ -194,11 +174,11 @@ export type ListUsersQuery = {
       __typename: "User",
       id: string,
       name: string | null,
-      createdAt: number | null,
-      updatedAt: number | null,
       _version: number,
       _deleted: boolean | null,
       _lastChangedAt: number,
+      createdAt: string,
+      updatedAt: string,
     } | null > | null,
     nextToken: string | null,
     startedAt: number | null,
@@ -219,11 +199,11 @@ export type SyncUsersQuery = {
       __typename: "User",
       id: string,
       name: string | null,
-      createdAt: number | null,
-      updatedAt: number | null,
       _version: number,
       _deleted: boolean | null,
       _lastChangedAt: number,
+      createdAt: string,
+      updatedAt: string,
     } | null > | null,
     nextToken: string | null,
     startedAt: number | null,
@@ -235,11 +215,11 @@ export type OnCreateUserSubscription = {
     __typename: "User",
     id: string,
     name: string | null,
-    createdAt: number | null,
-    updatedAt: number | null,
     _version: number,
     _deleted: boolean | null,
     _lastChangedAt: number,
+    createdAt: string,
+    updatedAt: string,
   } | null,
 };
 
@@ -248,11 +228,11 @@ export type OnUpdateUserSubscription = {
     __typename: "User",
     id: string,
     name: string | null,
-    createdAt: number | null,
-    updatedAt: number | null,
     _version: number,
     _deleted: boolean | null,
     _lastChangedAt: number,
+    createdAt: string,
+    updatedAt: string,
   } | null,
 };
 
@@ -261,10 +241,10 @@ export type OnDeleteUserSubscription = {
     __typename: "User",
     id: string,
     name: string | null,
-    createdAt: number | null,
-    updatedAt: number | null,
     _version: number,
     _deleted: boolean | null,
     _lastChangedAt: number,
+    createdAt: string,
+    updatedAt: string,
   } | null,
 };

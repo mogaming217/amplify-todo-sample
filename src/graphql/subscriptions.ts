@@ -7,11 +7,11 @@ export const onCreateUser = /* GraphQL */ `
     onCreateUser {
       id
       name
-      createdAt
-      updatedAt
       _version
       _deleted
       _lastChangedAt
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -20,11 +20,11 @@ export const onUpdateUser = /* GraphQL */ `
     onUpdateUser {
       id
       name
-      createdAt
-      updatedAt
       _version
       _deleted
       _lastChangedAt
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -33,11 +33,11 @@ export const onDeleteUser = /* GraphQL */ `
     onDeleteUser {
       id
       name
-      createdAt
-      updatedAt
       _version
       _deleted
       _lastChangedAt
+      createdAt
+      updatedAt
     }
   }
 `;

@@ -7,11 +7,11 @@ export const getUser = /* GraphQL */ `
     getUser(id: $id) {
       id
       name
-      createdAt
-      updatedAt
       _version
       _deleted
       _lastChangedAt
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -25,11 +25,11 @@ export const listUsers = /* GraphQL */ `
       items {
         id
         name
-        createdAt
-        updatedAt
         _version
         _deleted
         _lastChangedAt
+        createdAt
+        updatedAt
       }
       nextToken
       startedAt
@@ -52,11 +52,11 @@ export const syncUsers = /* GraphQL */ `
       items {
         id
         name
-        createdAt
-        updatedAt
         _version
         _deleted
         _lastChangedAt
+        createdAt
+        updatedAt
       }
       nextToken
       startedAt
