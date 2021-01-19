@@ -41,3 +41,45 @@ export const onDeleteUser = /* GraphQL */ `
     }
   }
 `;
+export const onCreateTodo = /* GraphQL */ `
+  subscription OnCreateTodo($owner: String) {
+    onCreateTodo(owner: $owner) {
+      id
+      title
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+      owner
+    }
+  }
+`;
+export const onUpdateTodo = /* GraphQL */ `
+  subscription OnUpdateTodo($owner: String) {
+    onUpdateTodo(owner: $owner) {
+      id
+      title
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+      owner
+    }
+  }
+`;
+export const onDeleteTodo = /* GraphQL */ `
+  subscription OnDeleteTodo($owner: String) {
+    onDeleteTodo(owner: $owner) {
+      id
+      title
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+      owner
+    }
+  }
+`;

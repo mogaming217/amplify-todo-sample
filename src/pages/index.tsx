@@ -11,7 +11,10 @@ const RootPage: NextPage = () => {
       <Link href="/terms">
         <a href="/terms">terms</a>
       </Link>
+      <br />
       <Link href="/auth">auth</Link>
+      <br />
+      <Link href="/tasks">tasks</Link>
       <div>
         <img src="/assets/sample.jpg" alt="QRコード" />
       </div>
