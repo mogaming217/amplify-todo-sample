@@ -1,6 +1,6 @@
 {
     "identityPoolName": "testAuthIdentityPool",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "samplec17677cc",
     "userPoolName": "sampleapp",
     "autoVerifiedAttributes": [
@@ -59,7 +59,12 @@
     "userPoolGroupList": [],
     "adminQueries": false,
     "thirdPartyAuth": false,
-    "authProviders": [],
     "usernameCaseSensitive": false,
-    "dependsOn": []
+    "dependsOn": [],
+    "triggers": "{}",
+    "hostedUI": false,
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "permissions": []
 }
